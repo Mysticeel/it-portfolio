@@ -266,3 +266,52 @@ footer a:hover {
   transform: translateY(-4px);
   border-color: #38bdf8;
 }
+
+.about-text {
+  max-width: 750px;
+  color: #cbd5e1;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cert {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cert h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.cert span {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.completed span {
+  background: #14532d;
+  color: #bbf7d0;
+}
+
+.progress span {
+  background: #78350f;
+  color: #fde68a;
+}
+
+.planned span {
+  background: #1e3a8a;
+  color: #bfdbfe;
+}
