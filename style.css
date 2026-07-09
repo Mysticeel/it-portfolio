@@ -196,3 +196,46 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.hero-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:64px;
+    line-height:1.1;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero-card{
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:16px;
+    padding:25px;
+}
+
+.hero-card h3{
+    margin-top:0;
+    color:#38bdf8;
+}
+
+.hero-card ul{
+    list-style:none;
+    padding:0;
+    margin:20px 0 0;
+}
+
+.hero-card li{
+    padding:12px 0;
+    border-bottom:1px solid #334155;
+}
+
+.hero-card li:last-child{
+    border-bottom:none;
+}
