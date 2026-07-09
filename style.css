@@ -66,20 +66,6 @@ h2 {
   border: 1px solid #475569;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
-}
-
-.grid span,
-.project {
-  background: #1e293b;
-  border: 1px solid #334155;
-  padding: 16px;
-  border-radius: 10px;
-}
-
 .project {
   margin-bottom: 14px;
 }
