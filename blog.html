@@ -3,168 +3,352 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
   <meta
     name="description"
-    content="Technical notes by William Calvert covering CloudOps Toolkit, Azure, Microsoft 365, Entra ID, automation and infrastructure."
+    content="William Calvert's IT knowledge base covering Microsoft 365, Azure, Active Directory, PowerShell, networking, security and automation."
   />
 
-  <title>Technical Notes | William Calvert</title>
+  <title>Knowledge Base | William Calvert</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <main class="container">
+  <header class="site-header">
+    <div class="shell nav-shell">
 
-    <nav>
-      <a href="index.html" class="logo" aria-label="William Calvert homepage">
-        WC
+      <a href="index.html" class="brand" aria-label="William Calvert homepage">
+        <span class="brand-mark">WC</span>
+
+        <span class="brand-text">
+          <strong>William Calvert</strong>
+          <small>IT Support Executive</small>
+        </span>
       </a>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html" aria-current="page">Technical Notes</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <section class="page-header">
-      <p class="eyebrow">Technical notes</p>
+      <nav id="site-navigation" class="site-navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">CloudOps Toolkit</a>
+        <a href="blog.html" aria-current="page">Knowledge Base</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-      <h1>Documenting what I build</h1>
+    </div>
+  </header>
 
-      <p class="intro">
-        This section will document the development of CloudOps Toolkit,
-        including technical decisions, implementation notes, lessons learned
-        and troubleshooting along the way.
-      </p>
+  <main>
+
+    <section class="kb-hero">
+      <div class="shell kb-hero-grid">
+
+        <div>
+          <p class="kicker">Knowledge base</p>
+
+          <h1>
+            Practical IT guides,
+            <span>clearly documented.</span>
+          </h1>
+
+          <p class="kb-summary">
+            A growing collection of technical notes, troubleshooting guides
+            and administration write-ups covering the technologies I work with
+            and continue to learn.
+          </p>
+        </div>
+
+        <aside class="kb-summary-panel">
+          <div>
+            <span>Primary topics</span>
+            <strong>Microsoft, infrastructure and automation</strong>
+          </div>
+
+          <div>
+            <span>Writing style</span>
+            <strong>Step-by-step and practical</strong>
+          </div>
+
+          <div>
+            <span>Current status</span>
+            <strong class="active-status">Growing knowledge base</strong>
+          </div>
+        </aside>
+
+      </div>
     </section>
 
-    <section class="notes-intro">
-      <p class="section-label">Current focus</p>
-      <h2>CloudOps Toolkit development</h2>
+    <section class="kb-categories-section">
+      <div class="shell">
 
-      <p>
-        Each note will cover a specific part of the project, from application
-        structure and authentication to Azure, Microsoft 365, Entra ID,
-        reporting and CI/CD.
-      </p>
+        <div class="section-heading-row">
+          <div>
+            <p class="section-kicker">Browse by topic</p>
+            <h2>Knowledge areas</h2>
+          </div>
+        </div>
 
-      <a href="projects/cloudops-toolkit.html" class="btn">
-        View CloudOps Toolkit
-      </a>
+        <div class="kb-category-grid">
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">M365</span>
+            <h3>Microsoft 365</h3>
+            <p>
+              Administration, Exchange Online, licensing, users,
+              permissions and Microsoft Graph.
+            </p>
+          </article>
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">AZR</span>
+            <h3>Azure</h3>
+            <p>
+              Azure fundamentals, resources, identity, governance,
+              monitoring and cloud administration.
+            </p>
+          </article>
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">AD</span>
+            <h3>Active Directory</h3>
+            <p>
+              Users, groups, Group Policy, DNS, DHCP,
+              permissions and troubleshooting.
+            </p>
+          </article>
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">PS</span>
+            <h3>PowerShell</h3>
+            <p>
+              Automation, reporting, error handling,
+              validation and repeatable administration.
+            </p>
+          </article>
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">NET</span>
+            <h3>Networking</h3>
+            <p>
+              Switching, VLANs, DNS, DHCP, SNMP,
+              monitoring and connectivity troubleshooting.
+            </p>
+          </article>
+
+          <article class="kb-category-card">
+            <span class="kb-category-code">SEC</span>
+            <h3>Security</h3>
+            <p>
+              Endpoint protection, vulnerability remediation,
+              patching, hardening and Cyber Essentials.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
     </section>
 
-    <section class="notes-grid">
+    <section class="kb-guides-section">
+      <div class="shell">
 
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>Project setup</span>
+        <div class="section-heading-row">
+          <div>
+            <p class="section-kicker">Current articles</p>
+            <h2>Guides and technical notes</h2>
+          </div>
         </div>
 
-        <h2>Structuring CloudOps Toolkit</h2>
+        <div class="kb-guide-list">
 
-        <p>
-          How the repository is organised across source code, scripts,
-          tests, documentation and project assets.
-        </p>
+          <article class="kb-guide-row">
+            <div class="kb-guide-meta">
+              <span>CloudOps Toolkit</span>
+              <span>Planned</span>
+            </div>
 
-        <span class="note-status">Coming soon</span>
-      </article>
+            <div class="kb-guide-content">
+              <h3>Structuring an IT Administration Toolkit</h3>
 
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>Microsoft Graph</span>
+              <p>
+                How CloudOps Toolkit is organised across source code,
+                scripts, documentation, testing and project assets.
+              </p>
+            </div>
+
+            <span class="kb-guide-state">Coming soon</span>
+          </article>
+
+          <article class="kb-guide-row">
+            <div class="kb-guide-meta">
+              <span>Microsoft Graph</span>
+              <span>Planned</span>
+            </div>
+
+            <div class="kb-guide-content">
+              <h3>Connecting to Microsoft Graph for Administration</h3>
+
+              <p>
+                Understanding authentication, permissions and Graph access
+                for Microsoft 365 and Entra ID reporting.
+              </p>
+            </div>
+
+            <span class="kb-guide-state">Coming soon</span>
+          </article>
+
+          <article class="kb-guide-row">
+            <div class="kb-guide-meta">
+              <span>PowerShell</span>
+              <span>Planned</span>
+            </div>
+
+            <div class="kb-guide-content">
+              <h3>Building Reliable PowerShell Administration Scripts</h3>
+
+              <p>
+                Practical guidance on validation, logging, error handling
+                and safely automating repeatable IT tasks.
+              </p>
+            </div>
+
+            <span class="kb-guide-state">Coming soon</span>
+          </article>
+
+          <article class="kb-guide-row">
+            <div class="kb-guide-meta">
+              <span>Azure</span>
+              <span>Planned</span>
+            </div>
+
+            <div class="kb-guide-content">
+              <h3>Creating an Azure Resource Inventory</h3>
+
+              <p>
+                Retrieving, organising and presenting Azure resource data
+                for administration and reporting.
+              </p>
+            </div>
+
+            <span class="kb-guide-state">Coming soon</span>
+          </article>
+
         </div>
 
-        <h2>Connecting to Microsoft Graph</h2>
-
-        <p>
-          Authentication design, permissions and how Microsoft Graph will
-          support Microsoft 365 and Entra ID administration.
-        </p>
-
-        <span class="note-status">Coming soon</span>
-      </article>
-
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>Azure</span>
-        </div>
-
-        <h2>Building the Azure Resource Inventory</h2>
-
-        <p>
-          Retrieving Azure resource information and presenting it clearly
-          within the CloudOps Toolkit interface.
-        </p>
-
-        <span class="note-status">Coming soon</span>
-      </article>
-
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>Automation</span>
-        </div>
-
-        <h2>Designing the PowerShell Script Runner</h2>
-
-        <p>
-          Safely executing approved PowerShell scripts and returning useful
-          output, status and error information.
-        </p>
-
-        <span class="note-status">Coming soon</span>
-      </article>
-
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>Reporting</span>
-        </div>
-
-        <h2>Exporting CSV, Excel and PDF Reports</h2>
-
-        <p>
-          Designing reusable reporting functions for cloud administration
-          data and operational outputs.
-        </p>
-
-        <span class="note-status">Coming soon</span>
-      </article>
-
-      <article class="note-card">
-        <div class="note-meta">
-          <span>Planned</span>
-          <span>DevOps</span>
-        </div>
-
-        <h2>Adding GitHub Actions CI/CD</h2>
-
-        <p>
-          Automating tests and quality checks so changes can be validated
-          before they are merged.
-        </p>
-
-        <span class="note-status">Coming soon</span>
-      </article>
-
+      </div>
     </section>
 
-    <footer>
-      <p><strong>William Calvert</strong></p>
+    <section class="kb-principles-section">
+      <div class="shell">
 
-      <p>
+        <div class="kb-principles-card">
+
+          <div>
+            <p class="section-kicker">Documentation approach</p>
+            <h2>Written for people who need to fix things</h2>
+          </div>
+
+          <div class="kb-principles-list">
+
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Clear symptoms</h3>
+                <p>What the issue looks like before troubleshooting begins.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Practical investigation</h3>
+                <p>The checks, tools and decisions used to narrow down the cause.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Documented resolution</h3>
+                <p>The final fix, validation steps and anything worth remembering.</p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-banner">
+      <div class="shell">
+
+        <div class="contact-banner-inner">
+          <div>
+            <p class="section-kicker">Follow the work</p>
+            <h2>Guides will grow alongside CloudOps Toolkit</h2>
+
+            <p>
+              As modules are completed, I will document the administration,
+              troubleshooting and technical decisions behind them.
+            </p>
+          </div>
+
+          <div class="contact-banner-actions">
+            <a href="projects.html" class="button primary">
+              View CloudOps Toolkit
+            </a>
+
+            <a
+              href="https://github.com/Mysticeel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button secondary"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+
+      <div>
+        <strong>William Calvert</strong>
+        <p>IT Support Executive · Greater Manchester</p>
+      </div>
+
+      <div class="footer-links">
         <a href="mailto:William-calvert@hotmail.co.uk">Email</a>
-        ·
+
         <a
           href="https://github.com/Mysticeel"
           target="_blank"
@@ -172,7 +356,7 @@
         >
           GitHub
         </a>
-        ·
+
         <a
           href="https://www.linkedin.com/in/william-calvert-b155931b8"
           target="_blank"
@@ -180,12 +364,24 @@
         >
           LinkedIn
         </a>
-      </p>
+      </div>
 
-      <p>© 2026 William Calvert</p>
-    </footer>
+      <p class="copyright">© 2026 William Calvert</p>
 
-  </main>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navigation = document.querySelector(".site-navigation");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      navigation.classList.toggle("is-open");
+    });
+  </script>
 
 </body>
 </html>
