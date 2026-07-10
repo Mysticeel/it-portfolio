@@ -3,72 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="William Calvert's IT portfolio covering infrastructure, Microsoft 365, cloud, security and automation."
+  />
+
   <title>William Calvert | IT Support Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <main class="container">
 
     <nav>
-      <div class="logo">WC</div>
+      <a href="index.html" class="logo" aria-label="William Calvert homepage">
+        WC
+      </a>
+
       <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#tech-stack">Stack</a></li>
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#featured-build">Build</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Technical Notes</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <section class="hero">
-      <div>
-        <p class="eyebrow">Infrastructure • Cloud • Security • Automation</p>
+      <div class="hero-text">
+        <p class="eyebrow">
+          Infrastructure • Cloud • Security • Automation
+        </p>
+
         <h1>William Calvert</h1>
+
         <p class="intro">
-          IT Support Executive supporting hybrid Windows and Azure environments, Microsoft 365,
-          Active Directory, security operations, backup platforms, monitoring and automation.
+          IT Support Executive with hands-on experience across Microsoft 365,
+          Active Directory, Windows Server, virtualisation, security operations,
+          backup platforms, monitoring and automation.
         </p>
 
         <div class="buttons">
-          <a href="#" class="btn">Download CV</a>
-          <a href="https://github.com/Mysticeel" target="_blank" class="btn secondary">GitHub</a>
-          <a href="#" class="btn secondary">LinkedIn</a>
+          <a href="resume.html" class="btn">
+            View Resume
+          </a>
+
+          <a
+            href="https://github.com/Mysticeel"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/william-calvert-b155931b8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
 
-      <div class="status-card">
-        <p class="status-dot">● Available for cloud & infrastructure growth</p>
-        <h3>Current Focus</h3>
-        <p>Building deeper Azure, identity, automation and security skills.</p>
-      </div>
+      <aside class="status-card">
+        <p class="status-dot">
+          <span aria-hidden="true">●</span>
+          Developing towards cloud and infrastructure roles
+        </p>
+
+        <h2>Current Focus</h2>
+
+        <p>
+          Building deeper Azure, identity, PowerShell, Python and security
+          expertise through certifications and practical projects.
+        </p>
+      </aside>
     </section>
 
-    <section id="overview">
-      <h2>Professional Snapshot</h2>
+    <section id="about" class="about-section">
+      <div class="about-image-wrapper">
+        <img
+          src="assets/will-calvert.jpg"
+          alt="Portrait of William Calvert"
+          class="about-image"
+        />
+      </div>
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span>160+</span>
-          <p>Users Supported</p>
-        </div>
+      <div class="about-content">
+        <p class="section-label">About me</p>
+        <h2>Practical IT support with an infrastructure mindset</h2>
 
-        <div class="stat-card">
-          <span>4+</span>
-          <p>Years IT Experience</p>
-        </div>
+        <p>
+          I support hybrid Windows and Azure environments across Microsoft 365,
+          Active Directory, Windows Server, virtualisation, networking,
+          endpoint security and business-critical applications.
+        </p>
 
-        <div class="stat-card">
-          <span>35</span>
-          <p>Vulnerabilities Remediated</p>
-        </div>
+        <p>
+          My work also includes vulnerability remediation, backup and recovery,
+          infrastructure monitoring, technical documentation, user training and
+          process automation.
+        </p>
 
-        <div class="stat-card">
-          <span>Hybrid</span>
-          <p>Windows / Azure Estate</p>
-        </div>
+        <p>
+          I enjoy taking recurring support problems and turning them into
+          documented, reliable and automated solutions.
+        </p>
       </div>
     </section>
 
@@ -79,9 +124,9 @@
         <div class="stack-item">Microsoft 365</div>
         <div class="stack-item">Entra ID</div>
         <div class="stack-item">Azure</div>
-        <div class="stack-item">Windows Server</div>
-        <div class="stack-item">Active Directory</div>
         <div class="stack-item">Exchange Online</div>
+        <div class="stack-item">Active Directory</div>
+        <div class="stack-item">Windows Server</div>
         <div class="stack-item">PowerShell</div>
         <div class="stack-item">Python</div>
         <div class="stack-item">UiPath</div>
@@ -90,12 +135,12 @@
         <div class="stack-item">Veeam</div>
         <div class="stack-item">Fortigate</div>
         <div class="stack-item">CrowdStrike</div>
-        <div class="stack-item">ESET</div>
+        <div class="stack-item">ESET Protect</div>
         <div class="stack-item">LibreNMS</div>
         <div class="stack-item">Power BI</div>
+        <div class="stack-item">Microsoft Sentinel</div>
         <div class="stack-item">Git</div>
         <div class="stack-item">GitHub</div>
-        <div class="stack-item">Windows 11</div>
       </div>
     </section>
 
@@ -103,110 +148,140 @@
       <h2>Technical Expertise</h2>
 
       <div class="expertise-grid">
-        <div class="card">
+
+        <article class="card">
           <h3>Cloud & Identity</h3>
-          <p>Microsoft 365, Azure AD, Entra ID, Exchange Online, user lifecycle management.</p>
-        </div>
+          <p>
+            Microsoft 365, Entra ID, Azure AD, Exchange Online,
+            hybrid identity and user lifecycle administration.
+          </p>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Infrastructure</h3>
-          <p>Windows Server, Active Directory, GPO, DNS, DHCP, VMware, Hyper-V and file services.</p>
-        </div>
+          <p>
+            Windows Server, Active Directory, Group Policy, DNS, DHCP,
+            VMware, Hyper-V and file services.
+          </p>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Security Operations</h3>
-          <p>ESET Protect, CrowdStrike, Fortigate, WSUS, vulnerability remediation and Cyber Essentials.</p>
-        </div>
+          <p>
+            ESET Protect, CrowdStrike, Fortigate, WSUS, vulnerability
+            remediation and Cyber Essentials support.
+          </p>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Backup & Storage</h3>
-          <p>Veeam Backup & Replication, QNAP SAN/NAS, RAID, snapshots and restore testing.</p>
-        </div>
+          <p>
+            Veeam Backup & Replication, QNAP SAN/NAS, RAID, snapshots,
+            retention management and restore testing.
+          </p>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Automation & Reporting</h3>
-          <p>UiPath RPA, PowerShell, Power BI, Microsoft Sentinel, LibreNMS and process improvement.</p>
-        </div>
+          <p>
+            UiPath RPA, PowerShell, Python, Power BI, Microsoft Sentinel,
+            reporting and process improvement.
+          </p>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Support Operations</h3>
-          <p>1st/2nd line support, endpoint troubleshooting, VoIP, documentation and user training.</p>
-        </div>
+          <p>
+            First and second-line support, endpoint troubleshooting,
+            VoIP, documentation, knowledge management and user training.
+          </p>
+        </article>
+
       </div>
     </section>
 
-    <section id="highlights">
-      <h2>Professional Highlights</h2>
+    <section id="featured-projects">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Selected work</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <a href="projects.html" class="text-link">
+          View all projects →
+        </a>
+      </div>
 
       <div class="highlight-grid">
-        <div class="highlight-card">
-          <h3>Security Remediation</h3>
-          <p>Contributed to penetration test remediation, AD hardening, endpoint security and compliance improvements.</p>
-          <div class="tags">
-            <span>AD Hardening</span>
-            <span>WSUS</span>
-            <span>ESET</span>
-            <span>Cyber Essentials</span>
-          </div>
-        </div>
 
-        <div class="highlight-card">
-          <h3>UiPath Automation</h3>
-          <p>Built and improved automations for Direct Debits, credit control, data extraction and exception handling.</p>
+        <article class="highlight-card">
+          <h3>CloudOps Toolkit</h3>
+
+          <p>
+            A Python-based toolkit for practical IT troubleshooting,
+            support workflows and cloud operations learning.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>Git</span>
+            <span>IT Operations</span>
+          </div>
+
+          <a
+            href="https://github.com/Mysticeel/cloudops-toolkit"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            View repository →
+          </a>
+        </article>
+
+        <article class="highlight-card">
+          <h3>New Starter Automation</h3>
+
+          <p>
+            Automated user creation, group membership, Microsoft 365
+            provisioning checks and repeatable onboarding tasks.
+          </p>
+
+          <div class="tags">
+            <span>PowerShell</span>
+            <span>Microsoft Graph</span>
+            <span>Active Directory</span>
+          </div>
+
+          <a
+            href="projects.html#new-starter-automation"
+            class="project-link"
+          >
+            Read case study →
+          </a>
+        </article>
+
+        <article class="highlight-card">
+          <h3>UiPath Process Automation</h3>
+
+          <p>
+            Built and improved operational workflows using validation,
+            exception handling, reporting and monitoring.
+          </p>
+
           <div class="tags">
             <span>UiPath</span>
-            <span>PowerShell</span>
-            <span>Validation</span>
-            <span>Reporting</span>
+            <span>Power BI</span>
+            <span>Process Improvement</span>
           </div>
-        </div>
 
-        <div class="highlight-card">
-          <h3>Backup & Recovery</h3>
-          <p>Administered backup jobs, retention policies, restore testing and QNAP storage management.</p>
-          <div class="tags">
-            <span>Veeam</span>
-            <span>QNAP</span>
-            <span>RAID</span>
-            <span>Restores</span>
-          </div>
-        </div>
-
-        <div class="highlight-card">
-          <h3>Monitoring & Visibility</h3>
-          <p>Supported LibreNMS deployment and network visibility across Aruba, HP and UniFi environments.</p>
-          <div class="tags">
-            <span>LibreNMS</span>
-            <span>UniFi</span>
-            <span>VLANs</span>
-            <span>DHCP</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured-build">
-      <h2>Featured Build</h2>
-
-      <div class="highlight-card">
-        <h3>CloudOps Toolkit</h3>
-        <p>
-          A personal IT support toolkit project built to strengthen practical skills in Python,
-          Git, troubleshooting workflows, documentation and cloud/infrastructure operations.
-        </p>
-
-        <div class="tags">
-          <span>Python</span>
-          <span>GitHub</span>
-          <span>IT Support</span>
-          <span>Cloud Learning</span>
-        </div>
-
-        <div class="buttons">
-          <a href="https://github.com/Mysticeel/cloudops-toolkit" target="_blank" class="btn">
-            View on GitHub
+          <a
+            href="projects.html#uipath-automation"
+            class="project-link"
+          >
+            Read case study →
           </a>
-        </div>
+        </article>
+
       </div>
     </section>
 
@@ -214,76 +289,114 @@
       <h2>Career Timeline</h2>
 
       <div class="timeline">
-        <div class="timeline-item">
+
+        <article class="timeline-item">
           <span>2023 — Present</span>
           <h3>MoneyPlus Group</h3>
-          <p>IT Support Executive supporting infrastructure, cloud, security, automation and end-to-end technical support.</p>
-        </div>
+          <p>
+            IT Support Executive supporting infrastructure, cloud,
+            security, automation and end-to-end technical operations.
+          </p>
+        </article>
 
-        <div class="timeline-item">
+        <article class="timeline-item">
           <span>2022</span>
           <h3>Cognisys</h3>
-          <p>Computer Security Analyst focused on vulnerability scanning, Cyber Essentials audits and remediation support.</p>
-        </div>
+          <p>
+            Computer Security Analyst working across vulnerability scanning,
+            Cyber Essentials assessments, monitoring and remediation support.
+          </p>
+        </article>
 
-        <div class="timeline-item">
+        <article class="timeline-item">
           <span>2019 — 2023</span>
           <h3>Computeam</h3>
-          <p>1st Line Service Desk Engineer supporting users, devices, systems, deployments and client environments.</p>
-        </div>
+          <p>
+            First Line Service Desk Engineer supporting users, devices,
+            deployments and multi-site client environments.
+          </p>
+        </article>
+
       </div>
     </section>
 
     <section id="certifications">
-      <h2>Certifications</h2>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Professional development</p>
+          <h2>Certifications</h2>
+        </div>
+
+        <a href="resume.html#certifications" class="text-link">
+          View full resume →
+        </a>
+      </div>
 
       <div class="cert-grid">
-        <div class="cert completed">
+
+        <article class="cert completed">
           <h3>SC-900</h3>
           <p>Security, Compliance & Identity Fundamentals</p>
           <span>Completed</span>
-        </div>
+        </article>
 
-        <div class="cert progress">
+        <article class="cert progress">
           <h3>AZ-900</h3>
           <p>Microsoft Azure Fundamentals</p>
           <span>In Progress</span>
-        </div>
+        </article>
 
-        <div class="cert completed">
+        <article class="cert completed">
           <h3>BCS Level 3</h3>
           <p>Cloud Services</p>
           <span>Completed</span>
-        </div>
+        </article>
 
-        <div class="cert completed">
+        <article class="cert completed">
           <h3>BCS Level 3</h3>
           <p>Coding & Logic</p>
           <span>Completed</span>
-        </div>
+        </article>
 
-        <div class="cert completed">
+        <article class="cert completed">
           <h3>MTA</h3>
           <p>Networking Fundamentals</p>
           <span>Completed</span>
-        </div>
+        </article>
 
-        <div class="cert completed">
+        <article class="cert completed">
           <h3>PAT Testing</h3>
           <p>Portable Appliance Testing</p>
           <span>Completed</span>
-        </div>
+        </article>
+
       </div>
     </section>
 
     <footer id="contact">
-      <p>William Calvert</p>
+      <p><strong>William Calvert</strong></p>
+
       <p>
-        <a href="mailto:William-calvert@hotmail.co.uk">Email</a> ·
-        <a href="https://github.com/Mysticeel" target="_blank">GitHub</a> ·
-        <a href="#">LinkedIn</a>
+        <a href="mailto:William-calvert@hotmail.co.uk">Email</a>
+        ·
+        <a
+          href="https://github.com/Mysticeel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        ·
+        <a
+          href="https://www.linkedin.com/in/william-calvert-b155931b8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
       </p>
-      <p>© 2026</p>
+
+      <p>© 2026 William Calvert</p>
     </footer>
 
   </main>
