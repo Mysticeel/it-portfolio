@@ -1,16 +1,28 @@
-# William Calvert — Technical Hub
+# William Calvert Personal Hub
 
-A static personal site combining a portfolio, engineering log and career profile.
+A clean static portfolio, résumé and engineering-log homepage built for GitHub Pages.
 
-## Publish
+## Deploy
 
-This repository is ready for GitHub Pages. Commit the files to `main`; the existing project page path will continue to work.
+Copy the contents of this folder into the root of the `it-portfolio` repository, then run:
 
-## Update
+```powershell
+git add .
+git commit -m "feat: rebuild portfolio from scratch"
+git push origin main
+```
 
-- Homepage content: `index.html`
-- Projects: `projects.html`
-- Engineering notes: `blog.html`
-- Career profile: `resume.html`
-- Shared design: `style.css`
-- Shared interactions: `script.js`
+GitHub Pages should serve the site from:
+
+`https://mysticeel.github.io/it-portfolio/`
+
+## Before publishing
+
+Replace `your-email@example.com` in `index.html` with your preferred contact email.
+
+## Structure
+
+- `index.html` — full single-page site
+- `style.css` — responsive design
+- `script.js` — navigation and subtle reveal animations
+- `assets/` — profile image and CV
