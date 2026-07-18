@@ -431,6 +431,71 @@
       font-size: 0.88rem;
     }
 
+
+    .achievement-grid,
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .achievement-card,
+    .certification-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(13, 26, 43, 0.84);
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background 180ms ease;
+    }
+
+    .achievement-card:hover,
+    .certification-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(103, 183, 255, 0.36);
+      background: var(--surface-hover);
+    }
+
+    .achievement-card h3,
+    .certification-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .achievement-card p,
+    .certification-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .certification-status {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      margin-top: 24px;
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
     .project-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -631,7 +696,72 @@
       }
 
       .work-grid,
-      .project-grid {
+  
+    .achievement-grid,
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .achievement-card,
+    .certification-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(13, 26, 43, 0.84);
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background 180ms ease;
+    }
+
+    .achievement-card:hover,
+    .certification-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(103, 183, 255, 0.36);
+      background: var(--surface-hover);
+    }
+
+    .achievement-card h3,
+    .certification-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .achievement-card p,
+    .certification-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .certification-status {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      margin-top: 24px;
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .project-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -678,7 +808,9 @@
 
       .work-grid,
       .project-grid,
-      .learning-grid {
+      .learning-grid,
+      .achievement-grid,
+      .certification-grid {
         grid-template-columns: 1fr;
       }
 
@@ -743,8 +875,9 @@
       <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#work">What I do</a>
-        <a href="#projects">Projects</a>
-        <a href="#learning">Learning</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Personal Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -807,7 +940,7 @@
     <section id="about">
       <div class="container">
         <div class="section-heading reveal">
-          <h2>More than a support desk.</h2>
+          <h2>Supporting users, systems and the infrastructure behind them.</h2>
           <p>
             My role covers the day-to-day support users rely on, but it also includes
             maintaining systems, improving security, supporting infrastructure and
@@ -967,151 +1100,144 @@
       </div>
     </section>
 
-    <section id="projects">
+
+    <section id="achievements">
       <div class="container">
         <div class="section-heading reveal">
-          <h2>Projects & improvements</h2>
+          <h2>Key achievements</h2>
           <p>
-            Examples of the practical work I enjoy: solving real problems, improving
-            visibility and reducing repetitive effort.
+            Practical improvements I have contributed to across infrastructure,
+            security, automation and day-to-day IT operations.
           </p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <span class="project-type">Automation</span>
-            <h3>Business process automation</h3>
+        <div class="achievement-grid">
+          <article class="achievement-card reveal">
+            <h3>Improved security posture</h3>
             <p>
-              Designed and supported UiPath workflows for direct debits, credit control,
-              data extraction, exception handling and system health checks.
-            </p>
-            <div class="project-tech">
-              <span>UiPath</span>
-              <span>PowerShell</span>
-              <span>OCR</span>
-              <span>Process improvement</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <span class="project-type">Infrastructure</span>
-            <h3>Monitoring and visibility</h3>
-            <p>
-              Supported the deployment and improvement of monitoring platforms to give
-              clearer visibility of devices, services, network health and operational data.
-            </p>
-            <div class="project-tech">
-              <span>LibreNMS</span>
-              <span>Sentinel</span>
-              <span>Power BI</span>
-              <span>Nmap</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <span class="project-type">Security</span>
-            <h3>Security remediation</h3>
-            <p>
-              Contributed to vulnerability remediation, Active Directory hardening,
+              Supported vulnerability remediation, Active Directory hardening,
               endpoint protection improvements and Cyber Essentials preparation.
             </p>
-            <div class="project-tech">
-              <span>Active Directory</span>
-              <span>ESET</span>
-              <span>WSUS</span>
-              <span>Cyber Essentials</span>
-            </div>
           </article>
 
-          <article class="project-card reveal">
-            <span class="project-type">Personal project</span>
-            <h3>CloudOps Toolkit</h3>
+          <article class="achievement-card reveal">
+            <h3>Built and supported automation</h3>
             <p>
-              A growing Python-based toolkit used to develop my software, automation,
-              Git and cloud administration skills through practical modules and utilities.
+              Developed and maintained UiPath workflows that reduced repetitive work,
+              improved validation and made operational processes easier to manage.
             </p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>GitHub</span>
-              <span>CLI</span>
-              <span>Automation</span>
-            </div>
           </article>
 
-          <article class="project-card reveal">
-            <span class="project-type">Documentation</span>
-            <h3>Knowledge and onboarding</h3>
+          <article class="achievement-card reveal">
+            <h3>Strengthened monitoring and visibility</h3>
             <p>
-              Created technical documentation, troubleshooting guides, SOPs and internal
-              knowledge material to improve support quality and user confidence.
+              Helped improve infrastructure and security visibility using LibreNMS,
+              Microsoft Sentinel, Power BI and operational reporting.
             </p>
-            <div class="project-tech">
-              <span>Confluence</span>
-              <span>SharePoint</span>
-              <span>Training</span>
-              <span>Onboarding</span>
-            </div>
           </article>
 
-          <article class="project-card reveal">
-            <span class="project-type">Learning project</span>
-            <h3>Azure home lab</h3>
+          <article class="achievement-card reveal">
+            <h3>Improved support processes</h3>
             <p>
-              Building practical familiarity with Azure services at my own pace while
-              documenting what I learn and relating it back to real IT operations.
+              Created documentation, troubleshooting guides, onboarding processes and
+              user training that improved consistency and reduced repeat issues.
             </p>
-            <div class="project-tech">
-              <span>Azure</span>
-              <span>Identity</span>
-              <span>Networking</span>
-              <span>Administration</span>
-            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="learning">
+    <section id="projects">
       <div class="container">
         <div class="section-heading reveal">
-          <h2>What I am learning</h2>
+          <h2>Personal projects</h2>
           <p>
-            Cloud is part of my development, not a replacement for the broad operational
-            experience I am continuing to build in my current role.
+            Projects I build outside of work to develop practical skills, explore new
+            technologies and demonstrate what I can create independently.
           </p>
         </div>
 
-        <div class="learning-grid">
-          <article class="learning-card reveal">
-            <h3>Azure fundamentals and administration</h3>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span class="project-type">In progress</span>
+            <h3>CloudOps Toolkit</h3>
             <p>
-              Developing practical understanding of Azure identity, networking, compute,
-              storage, monitoring and governance through projects and structured study.
+              A modular Python toolkit I am actively building to strengthen my skills in
+              automation, software development and cloud administration. The project is
+              being developed incrementally using Git, GitHub and documented development
+              practices.
             </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>CLI</span>
+              <span>Automation</span>
+            </div>
+            <a
+              class="project-link"
+              href="https://github.com/Mysticeel/cloudops-toolkit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project on GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Certifications</h2>
+          <p>
+            Qualifications that support my practical experience across security,
+            networking, software development and cloud services.
+          </p>
+        </div>
+
+        <div class="certification-grid">
+          <article class="certification-card reveal">
+            <span class="certification-status">Microsoft</span>
+            <h3>AZ-900</h3>
+            <p>Microsoft Azure Fundamentals.</p>
           </article>
 
-          <article class="learning-card reveal">
-            <h3>Automation and infrastructure as code</h3>
-            <p>
-              Continuing to improve with PowerShell and Python while beginning to explore
-              repeatable infrastructure deployment and configuration.
-            </p>
+          <article class="certification-card reveal">
+            <span class="certification-status">Microsoft</span>
+            <h3>SC-900</h3>
+            <p>Security, Compliance and Identity Fundamentals.</p>
           </article>
 
-          <article class="learning-card reveal">
-            <h3>Security and identity</h3>
-            <p>
-              Building on my existing security experience through Microsoft identity,
-              access control, monitoring and security-focused certifications.
-            </p>
+          <article class="certification-card reveal">
+            <span class="certification-status">BCS Level 3</span>
+            <h3>Cloud Services</h3>
+            <p>Core cloud concepts, services and business use cases.</p>
           </article>
 
-          <article class="learning-card reveal">
-            <h3>Technical project delivery</h3>
-            <p>
-              Improving how I plan, document, test and present technical work so projects
-              are useful, understandable and maintainable.
-            </p>
+          <article class="certification-card reveal">
+            <span class="certification-status">BCS Level 3</span>
+            <h3>Coding &amp; Logic</h3>
+            <p>Programming fundamentals, structured logic and problem solving.</p>
+          </article>
+
+          <article class="certification-card reveal">
+            <span class="certification-status">Microsoft Technology Associate</span>
+            <h3>Networking Fundamentals</h3>
+            <p>Networking concepts, protocols, infrastructure and troubleshooting.</p>
+          </article>
+
+          <article class="certification-card reveal">
+            <span class="certification-status">Microsoft Technology Associate</span>
+            <h3>Mobility &amp; Device Fundamentals</h3>
+            <p>Device configuration, mobility, security and management concepts.</p>
+          </article>
+
+          <article class="certification-card reveal">
+            <span class="certification-status">Additional qualifications</span>
+            <h3>Business Processes &amp; PAT Testing</h3>
+            <p>City &amp; Guilds Level 3 Business Processes and PAT Testing certification.</p>
           </article>
         </div>
       </div>
@@ -1204,8 +1330,12 @@
               <span>LinkedIn</span>
               <span aria-hidden="true">↗</span>
             </a>
+            <a class="contact-link" href="assets/William-Calvert-CV.pdf" download>
+              <span>Download CV</span>
+              <span aria-hidden="true">↓</span>
+            </a>
             <a class="contact-link" href="resume.html">
-              <span>View résumé</span>
+              <span>View résumé online</span>
               <span aria-hidden="true">↗</span>
             </a>
           </div>
